@@ -49,6 +49,7 @@
 .loginsignup-login span{
     color: #ff4141;
     font-weight: 600;
+    cursor: pointer;
 }
 .loginsignup-agree{
     display: flex;
@@ -60,9 +61,6 @@
     font-weight: 500;
 }
 @media(max-width:500px){
-    .loginsignup{
-
-    }
     .loginsigup-fields input{
         height: 72px;
         width: 400px;
@@ -78,9 +76,6 @@
     }
 }
 @media(max-width:430px){
-    .loginsignup{
-
-    }
     .loginsigup-fields input{
         height: 72px;
         width: 300px;
