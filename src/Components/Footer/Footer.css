@@ -62,3 +62,16 @@
     height: 3px;
     background: #c7c7c7;
 }
+@media(max-width:600px){
+    .footer-logo p{
+        font-size: 30px;
+    }
+    .footer-links{
+        gap: 40px;
+        font-size: 10px;
+    }
+    .footer-links li{
+        gap: 20px;
+        font-size: 10px;
+    }
+}

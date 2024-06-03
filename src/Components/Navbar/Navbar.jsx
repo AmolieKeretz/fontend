@@ -12,20 +12,21 @@ const Navbar = () => {
     const {getTotalCartItems} = useContext(ShopContext);
     //navbar to button
     const menuRef =useRef();
-    const dropdown_toggle = (e) =>{
-      menuRef.current.classList.toggle('nav-menu-visible');
-      e.target.classList.toggle('open');
-    }
+    // const dropdown_toggle = (e) =>{
+    //   menuRef.current.classList.toggle('nav-menu-visible');
+    //   e.target.classList.toggle('open');
+    // }
 
   return (
-    <div className='navbar d-flex'>
+    <div className='navbar'>
         <div className="nav-logo">
             <p>Amolie</p>
             <span className='small-text'>SHOPPING</span>
         </div>
         {/* navbar to button */}
-        <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" />
-      <ul ref={menuRef} className="nav-menu d-flex gap-5">
+        {/* <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" /> */}
+        
+      <ul ref={menuRef} className="nav-menu d-flex">
         <li onClick={()=>{setmenu("shop")}}><Link style={{textDecoration: 'none'}} to='/'><p>Shop</p></Link> {menu==="shop"?<hr/>:<></>}</li>
         <li onClick={()=>{setmenu("mens")}}><Link style={{textDecoration: 'none',}}  to='/mens'><p>Mens</p></Link> {menu==="mens"?<hr/>:<></>}</li>
         <li onClick={()=>{setmenu("womens")}}><Link style={{textDecoration: 'none'}}  to='/womens'><p>Womens</p></Link> {menu==="womens"?<hr/>:<></>}</li>
