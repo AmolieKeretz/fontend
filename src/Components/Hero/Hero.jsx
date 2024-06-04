@@ -12,7 +12,7 @@ const Hero = () => {
         <p>for everyone</p>
         <div className='hero-latest-btn'>Latest Collection</div>
       </div>
-      <div className="hero-right me-5">
+      <div className="hero-right me-4">
         <img className='hero-image rounded-pill' src={hero_banner} alt="" />
       </div>
       
